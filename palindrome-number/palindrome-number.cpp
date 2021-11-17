@@ -5,9 +5,6 @@ public:
       string newStr = to_string(x);
       reverse(newStr.begin(), newStr.end());
 
-      cout<<newStr<<endl;
-      cout<<oldStr<<endl;
-
       if(newStr==oldStr){
         return true;
       }else {
