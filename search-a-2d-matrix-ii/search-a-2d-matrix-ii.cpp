@@ -3,27 +3,32 @@ public:
     bool searchMatrix(vector<vector<int>>& mat, int target) {
         int n = mat.size();
         int m = mat[0].size();
-        int i=0,j=0;
+        int i = n-1;
+        int j = 0;
         
         
-        for(i=0; i<n; i++){
-            if(binary_search(mat[i].begin(), mat[i].end(), target)){
+        while(i>=0 and j<m){
+            if(mat[i][j] < target){
+                j++;
+            }
+            else if(mat[i][j] > target){
+                i--;
+            }
+            else{
                 return true;
             }
         }
-        
         return false;
         
-//         if(n==1 and mat[0][0] == target)
-//             return true;
         
-//         while(i<n and j<m){
-//             if(mat[i][j] == target){
+//         for(i=0; i<n; i++){
+//             if(binary_search(mat[i].begin(), mat[i].end(), target)){
 //                 return true;
 //             }
-//             i++;
-//             j++;
 //         }
+        
 //         return false;
+        
+
     }
 };
