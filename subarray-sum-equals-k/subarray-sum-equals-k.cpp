@@ -21,28 +21,5 @@ public:
             m[pre]++;    
         }
         return cnt;
-        
-//         vector<int> pre(n, 0);
-//         pre[0] = nums[0];
-        
-//         for(int i=1; i<n; i++){
-//             pre[i] = pre[i-1] + nums[i];
-//         }
-        
-        
-//         int cnt;
-//         for(int i=0; i<n; i++){
-//             cnt = 0;
-//             for(int j=i; j<n; j++){
-//                 int cs;
-//                 if(i==0){
-//                     cs = pre[j];
-//                 }else{
-//                     cs = pre[j] - pre[i-1];
-//                 }
-//                 cout<< cs << " ";
-//             }
-//         }
-//         return cnt;
     }
 };
