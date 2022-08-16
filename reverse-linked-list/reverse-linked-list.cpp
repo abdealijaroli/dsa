@@ -14,7 +14,7 @@ public:
         //iteratively
         ListNode *current = head;
         ListNode *prev = NULL;
-        ListNode *temp = NULL;
+        ListNode *temp;
         
         while(current != NULL){
             temp = current->next;
@@ -25,7 +25,7 @@ public:
         head = prev;
         return head;
         
-        
+        //recursively
         
         // //base case
         // if(head == NULL or head->next == NULL){
