@@ -4,12 +4,8 @@ public:
         int idx = 0;
         
         for(int i : nums){
-            if(i!=val){
-                nums[idx] = i;
-                idx++;
-            }else{
-                continue;
-            }
+            if(i!=val)
+                nums[idx++] = i;
         }
         return idx;
     }
